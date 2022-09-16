@@ -1,0 +1,2 @@
+<ng-template #noDirt>No dirt</ng-template>
+<p *ngIf="dirt$ | async as dirt; else noDirt">{{ [dirt.color, dirt.form, dirt.smell]}}</p>
